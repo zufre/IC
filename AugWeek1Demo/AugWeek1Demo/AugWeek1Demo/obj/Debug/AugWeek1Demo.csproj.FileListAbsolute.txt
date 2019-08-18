@@ -1,0 +1,7 @@
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\bin\Debug\AugWeek1Demo.exe.config
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\bin\Debug\AugWeek1Demo.exe
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\bin\Debug\AugWeek1Demo.pdb
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\obj\Debug\AugWeek1Demo.csprojAssemblyReference.cache
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\obj\Debug\AugWeek1Demo.csproj.CoreCompileInputs.cache
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\obj\Debug\AugWeek1Demo.exe
+C:\Users\RAY\source\repos\AugWeek1Demo\AugWeek1Demo\obj\Debug\AugWeek1Demo.pdb
