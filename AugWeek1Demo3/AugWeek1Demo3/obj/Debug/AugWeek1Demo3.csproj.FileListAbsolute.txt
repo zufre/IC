@@ -1,0 +1,14 @@
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.exe.config
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.exe
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.pdb
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.csprojAssemblyReference.cache
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.csproj.CoreCompileInputs.cache
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.exe
+C:\Users\RAY\source\repos\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.pdb
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.exe.config
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.exe
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\bin\Debug\AugWeek1Demo3.pdb
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.csprojAssemblyReference.cache
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.csproj.CoreCompileInputs.cache
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.exe
+C:\Users\Cedric\Downloads\AugWeek1Demo3\AugWeek1Demo3\AugWeek1Demo3\obj\Debug\AugWeek1Demo3.pdb
