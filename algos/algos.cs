@@ -7,12 +7,22 @@ public class Program
 	public static void Main()
 	{
 		//Console.WriteLine(fib(6));
-		Console.WriteLine(reverse("Hello"));
+		Console.WriteLine(reverseInt(124));
 		//fizzBuzz(21);
 		Console.WriteLine(anagram("OnEeT", "n        Et o e"));
 		
 	}
-	public static string reverse(string str) {
+	public static int reverseInt(int num)
+	{
+		var absNum= num < 0? num * (-1) : num;
+		
+		var arr = absNum.ToString().ToCharArray().Reverse();
+		var str = String.Join("",arr);
+		
+		return num < 0 ? Int32.Parse(str)*(-1) : Int32.Parse(str);
+	}
+	public static string reverse(string str)
+	{
 		var arr = str.ToCharArray().Reverse();
 			return String.Join("",arr);
 	}
