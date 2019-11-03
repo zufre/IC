@@ -7,10 +7,14 @@ public class Program
 	public static void Main()
 	{
 		//Console.WriteLine(fib(6));
-		Console.WriteLine(IsPalindrome("wertrew"));
+		Console.WriteLine(reverse("Hello"));
 		//fizzBuzz(21);
 		Console.WriteLine(anagram("OnEeT", "n        Et o e"));
 		
+	}
+	public static string reverse(string str) {
+		var arr = str.ToCharArray().Reverse();
+			return String.Join("",arr);
 	}
 	public static int fib(int num)
 	{
@@ -27,8 +31,13 @@ public class Program
 	}
 	 public static bool IsPalindrome(string str) 
     {
-	    str = Regex.Replace(str.ToLower(), "[^a-z]", "");
-	  	return str.SequenceEqual(str.Reverse());
+	  str = str.ToLower();
+		
+		var strArray = str.ToCharArray();
+		
+		Array.Reverse(strArray);
+				
+		return (new string(strArray)).Equals(str); 
     }
 	public static bool anagram(string strA, string strB){
 		if (cleanedString(strA) == cleanedString(strB)) {
