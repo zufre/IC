@@ -1,17 +1,49 @@
 using System;
-	using System.Collections.Generic;
+using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text.RegularExpressions;
+
 public class Program
 {
 	public static void Main()
 	{
 		//Console.WriteLine(fib(6));
-		Console.WriteLine(reverseInt(124));
+		Console.WriteLine(maxChar("wwwwwwwwwwwwwwweeeeeert"));
 		//fizzBuzz(21);
-		Console.WriteLine(anagram("OnEeT", "n        Et o e"));
+		//Console.WriteLine(anagram("OnEeT", "n        Et o e"));
 		
 	}
+	
+    static int ASCII_SIZE = 256; 
+      
+    public static char maxChar(String str) 
+    { 
+        // Create array to keep the count of 
+        // individual characters and  
+        // initialize the array as 0 
+        int []count = new int[ASCII_SIZE]; 
+      
+        // Construct character count array 
+        // from the input string. 
+        int len = str.Length; 
+        for (int i = 0; i < len; i++) 
+            count[str[i]]++; 
+      
+        int max = -1; // Initialize max count 
+        char result = ' '; // Initialize result 
+      
+        // Traversing through the string and  
+        // maintaining the count of each character 
+        for (int i = 0; i < len; i++) { 
+            if (max < count[str[i]]) { 
+                max = count[str[i]]; 
+                result = str[i]; 
+            } 
+        } 
+        return result; 
+	}	
+		
 	public static int reverseInt(int num)
 	{
 		var absNum= num < 0? num * (-1) : num;
