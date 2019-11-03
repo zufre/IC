@@ -1,67 +1,94 @@
 Imports System
 Imports System.Collections.Generic
+				
+Public Class Module1
+	Public Sub Main()
+		Console.WriteLine(anagram("neo ret","On e re t"))
+	End Sub
+	Public shared Function IsPalindrome(ByVal str As String) As Boolean
+    
+	  str = str.ToLower()
+		
+		Dim strArray = str.ToCharArray()
+		
+		Array.Reverse(strArray)
+				
+		return (new string(strArray)).Equals(str)
+	End Function
+	Public shared Function anagram(ByVal strA As string, strB As String) As Boolean
+		If cleanedString(strA) = cleanedString(strB) 
+			Return true	
+		End If
+		Return false
+	End Function
 
-Public Class Program
-    Public Shared Sub Main()
-        Console.WriteLine(anagram("OnEeT", "n        Et o e"))
-    End Sub
+	Public shared Function cleanedString(ByVal str As String ) As String 
+		
+		str = str.Replace(" ", "").ToLower()
+		
+		Dim arr As Char()  = New Char(str.Length){}
+		
+		For i AS Integer = 0 To str.Length-1
+			arr(i) = str(i)
+	Next
+		
+		 Array.Sort(arr)
+	DIM newStr AS String = ""
+	For Each i As char in arr
+		
+			newStr+=i
+		
+Next
+		
+		Return newStr
+		End Function
 
-    Public Shared Function fib(ByVal num As Integer) As Integer
-        Dim res As List(Of Integer) = New List(Of Integer) From {
-            0,
-            1
-        }
-
-        For i As Integer = 2 To num
-            Dim a As Integer = res(i - 1)
-            Dim b As Integer = res(i - 2)
-            res.Add(a + b)
-        Next
-
-        Return res(num)
-    End Function
-
-    Public Shared Function anagram(ByVal strA As String, ByVal strB As String) As Boolean
-        If cleanedString(strA) = cleanedString(strB) Then
-            Return True
-        End If
-
-        Return False
-    End Function
-
-    Public Shared Function cleanedString(ByVal str As String) As String
-        Console.WriteLine(str)
-        str = str.Replace(" ", "").ToLower()
-        Console.WriteLine(str)
-        Dim arr As Char() = New Char(str.Length - 1) {}
-
-        For i As Integer = 0 To str.Length - 1
-            arr(i) = str(i)
-        Next
-
-        Array.Sort(arr)
-        Dim newStr As String = ""
-
-        For Each i As Char In arr
-            newStr += i
-        Next
-
-        Console.WriteLine(newStr)
-        Return newStr
-    End Function
-
-    Public Shared Sub fizzBuzz(ByVal num As Integer)
-        For i As Integer = 0 To num
-
-            If i Mod 3 = 0 AndAlso i Mod 5 = 0 Then
-                Console.WriteLine("buzzFuzz")
-            ElseIf i Mod 3 = 0 Then
-                Console.WriteLine("buzz")
-            ElseIf i Mod 5 = 0 Then
-                Console.WriteLine("Fuzz")
-            Else
-                Console.WriteLine(i)
-            End If
-        Next
-    End Sub
-End Class
+	Public Shared Function fractorial(ByVal num As Integer) As Integer
+		
+		If num = 0
+				Return 1
+		End If
+		Return num * fractorial(num-1)
+	End Function
+	Public Shared Function fib(ByVal num As Integer) As Integer
+		If num = 0 Then
+			Return 0
+		Else If num = 1 Then
+				Return 1
+		End If
+			Return fib(num-1) + fib(num-2)
+			
+		End Function
+		Public Shared Function fibo(ByVal num As Integer) As Integer
+			Dim res As List(Of Integer) =New List(Of Integer) From {
+				0,
+				1
+				}
+			
+			 
+			For i As Integer = 2  to Num
+			Dim a As Integer = num-1
+			Dim b As Integer = num -2
+			res.Add(a+b)
+		Next
+		Return res(num)
+		
+		
+		
+			
+		End Function
+	Public Sub fizzBuzz(ByVal num As Integer)
+		For i As Integer = 0 To num
+		If i Mod 3 = 0 AndAlso i Mod 5 = 0 Then
+			Console.WriteLine("fizzBuzz") 
+		ElseIf i Mod 3= 0	Then
+			Console.WriteLine("fizz") 
+	ElseIf i Mod 5=0	Then
+			Console.WriteLine("buss") 
+		Else 
+			Console.WriteLine(i) 
+		End If
+		Next
+		
+	End Sub
+End Class 
