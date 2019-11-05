@@ -1,11 +1,8 @@
 Imports System
 				
 Public Module Module1
-	
-
-Public Class Program
-    Public Shared Sub Main()
-        Dim intArray As Integer(,) = New Integer(3, 3) {
+	Public Sub Main()
+		Dim intArray As Integer(,) = New Integer(3, 3) {
         {1, 2, 3, 5},
         {1, 33, 3, 4},
         {1, 55, 3, 4},
@@ -13,13 +10,10 @@ Public Class Program
 		For Each item AS Integer In larg(intArray) 
 		Console.WriteLine(item)
 	Next
-	
-        
-    End Sub
-
-    Public Shared Function larg(ByVal arr As Integer(,)) As Integer()
+	End Sub
+	 Public Function larg(ByVal arr As Integer(,)) As Integer()
         Dim newArr As Integer() = New Integer(3) {}
-
+		
         For i As Integer = 0 To 4 - 1
             Dim largestNum As Integer = 0
 
@@ -35,7 +29,6 @@ Public Class Program
 
         Return newArr
     End Function
-
 	Public Function findLongestWordLength(ByVal str As String) As Integer
 		Dim maxNum As Integer =1
 		Dim arr As String() = str.Split(" ")
@@ -65,5 +58,4 @@ Public Class Program
 		Next
 	Return res
 	End Function
-End Class
 End Module
